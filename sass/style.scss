@@ -1,0 +1,260 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Pangolin&subset=cyrillic,cyrillic-ext,latin-ext');
+
+$pan: 'Pangolin', cursive;
+
+body{
+	font-size: 16px;
+	background: #fff;
+	color: #535353;
+	font-family: $pan;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+a{
+	color: #4c8c96;
+	text-decoration: underline;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+body,html{
+	min-height: 100vh;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+*, *:focus{
+	outline: none !important;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-width: 320px;
+	.main{
+		flex-grow: 1;
+		flex-shrink: 0;
+		flex-basis: auto;
+
+	}
+}
+
+.container{
+	width: 650px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.title{
+	font-size: 24px;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
+.card_section{
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	padding: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+}
+
+.personal_info{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	.personal_avatar{
+		font-size: 0;
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+		border-radius: 50%;
+		border: 1px solid rgb(177, 177, 177);
+		margin-right: 30px;
+		img{
+			width: 100%;
+		}
+	}
+	.personal_name{
+		font-family: $pan;
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+	.personal_contacts{
+		margin-bottom: 0;
+		li{
+			display: flex;
+			margin-bottom: 5px;
+			font-size: 14px;
+			.pers_title{
+				display: block;
+				min-width: 80px;
+				font-family: $pan;
+				color: #000;
+			}
+			.pers_text{
+				display: block;
+			}
+		}
+	}
+}
+
+.my_skills{
+	margin-bottom: 40px;
+	li{
+		margin-bottom: 8px;
+		display: flex;
+		align-items: center;
+	}
+	.skill_name{
+		font-family: $pan;
+		font-size: 14px;
+		display: block;
+		width: 200px;
+		margin-right: 30px;
+	}
+	.skill_value{
+		display: block;
+		width: 45%;
+		height: 20px;
+		border-radius: 10px;
+		border: 2px solid #5a5a5a;
+		position: relative;
+		overflow: hidden;
+		&:before{
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: block;
+			height: 100%;
+			width: 0%;
+			background: #627882;
+		}
+		&.skill_1{
+			&:before{
+				width: 10%;
+			}
+		}
+		&.skill_2{
+			&:before{
+				width: 20%;
+			}
+		}
+		&.skill_3{
+			&:before{
+				width: 30%;
+			}
+		}
+		&.skill_4{
+			&:before{
+				width: 40%;
+			}
+		}
+		&.skill_5{
+			&:before{
+				width: 50%;
+			}
+		}
+		&.skill_6{
+			&:before{
+				width: 60%;
+			}
+		}
+		&.skill_7{
+			&:before{
+				width: 70%;
+			}
+		}
+		&.skill_8{
+			&:before{
+				width: 80%;
+			}
+		}
+		&.skill_9{
+			&:before{
+				width: 90%;
+			}
+		}
+		&.skill_10{
+			&:before{
+				width: 100%;
+			}
+			
+		}
+	}
+}
+
+.experience_section{
+	margin-bottom: 40px;
+	.exp_block{
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+		.exp_title{
+			margin-right: 30px;
+			width: 200px;
+			.exp_company{
+				font-size: 18px;
+				margin-bottom: 5px;
+			}
+			.exp_position{
+				font-size: 12px;
+			}
+		}
+		.exp_date{
+			font-size: 14px;
+		}
+	}
+}
+
+.work_examples_section{
+	margin-bottom: 40px;
+	li{
+		margin-bottom: 10px;
+	}
+	.codewars_img{
+		display: block;
+		margin-top: 5px;
+	}
+}
+
+.my_education_section{
+	margin-bottom: 40px;
+	.education_block{
+		margin-bottom: 15px;
+		display: flex;
+		.education_item{
+			width: 200px;
+			margin-right: 30px;
+			.education_name{
+				font-size: 16px;
+				margin-bottom: 5px;
+			}
+			.education_position{
+				font-size: 12px;
+			}
+		}
+		.education_date{
+			font-size: 14px;
+			span{
+				display: block;
+			}
+		}
+	}
+}
+
+.my_languages{
+	margin-bottom: 40px;
+}
+
+.my_summary{
+	
+}
